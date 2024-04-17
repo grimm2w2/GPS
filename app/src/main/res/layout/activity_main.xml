@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gps.MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="28dp"
+        android:text="Начать работу" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="35dp"
+        android:text="Посмотреть советы"
+        android:visibility="invisible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:layout_above="@+id/button"
+        android:layout_marginBottom="56dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="74dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginRight="70dp"
+            android:text='Здесь будет информация, нажмите на кнопку "Начать работу"'
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </ScrollView>
+</RelativeLayout>
